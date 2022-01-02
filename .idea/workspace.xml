@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5ea0763c-00c4-4f43-9a7e-e151f2325c9b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="230Eo2WuSTc4dBGzEN91S4mL7pV" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\atome\WebstormProjects\orders-backend" />
+      <recent name="C:\Users\atome\WebstormProjects\orders-backend\controller" />
+      <recent name="C:\Users\atome\WebstormProjects\orders-backend\models" />
+      <recent name="C:\Users\atome\WebstormProjects\orders-backend\DB" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5ea0763c-00c4-4f43-9a7e-e151f2325c9b" name="Default Changelist" comment="" />
+      <created>1640862776179</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1640862776179</updated>
+      <workItem from="1640862777267" duration="647000" />
+      <workItem from="1641112042481" duration="5786000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1641116293559">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="274" key="FileChooserDialogImpl/-1366.105.1366.728/0.0.1920.1040/1920.-301.1680.1010@0.0.1920.1040" timestamp="1641116293559" />
+    <state x="1920" y="-301" width="1436" height="1028" key="dock-window-1" timestamp="1641114493189">
+      <screen x="1920" y="-301" width="1680" height="1010" />
+    </state>
+    <state x="1920" y="-301" width="1436" height="1028" key="dock-window-1/-1366.105.1366.728/0.0.1920.1040/1920.-301.1680.1010@0.0.1920.1040" timestamp="1641114493189" />
+  </component>
+</project>
