@@ -13,14 +13,14 @@ const register = async (req, res) => {
       // validation
       if (password.length < 6)
         return res.status(400).json({
-          errorMessage: "Please enter a password of at least 6 characters.",
+          errorMessage: "يجب أن يتكون الرقم السري من أكثر من 6 خانات",
         });
 
   
       const existingUser = await User.findOne({ phone });
       if (existingUser)
         return res.status(400).json({
-          errorMessage: "An account with this phone already exists.",
+          errorMessage: "هذا الحساب موجود بالفعل",
         });
 
   
@@ -69,7 +69,7 @@ const register = async (req, res) => {
 
       const existingUser = await User.findOne({ phone, password });
       if (!existingUser)
-        return res.status(401).json({ errorMessage: "Wrong phone or password." });
+        return res.status(401).json({ errorMessage: "خطأ في رقم الهاتف او الرقم السري" });
 
   
       // sign the token
