@@ -86,7 +86,7 @@ const updateOrder = async (req, res) => {
 
 const updateStatus = async (req, res) => {
     try {
-        const order = await Order.findOne({_id: req.params.id})
+        const order = await Order.findOne({ _id: req.params.id })
         order.status = req.body.status
         res.json(await order.save())
     } catch (err) {
@@ -99,9 +99,21 @@ const getLoggedInUser = async (req) => {
     return await User.findOne({ _id: jwt.verify(req.headers.token, process.env.JWT_SECRET).user });
 }
 
+const deleteOrder = async (req, res) => {
+    try {
+        const order = await Order.findOne({ _id: req.params.id })
+        await order.deleteOne()
+        res.json()
+    } catch (error) {
+        console.log(error)
+        res.status(500).send()
+    }
+}
+
 module.exports = {
     getOrders,
     createOrder,
     updateOrder,
-    updateStatus
+    updateStatus,
+    deleteOrder
 }
