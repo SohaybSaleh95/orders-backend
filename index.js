@@ -10,12 +10,15 @@ app.use(cors());
 app.use(express.json())
 app.use(bodyParser.json())
 const port = 8000;
-app.use("/auth", require("./routers/userRouter"));
+app.use("/auth", require("./routers/authRouter"));
+app.use("/users", require('./routers/userRouter'));
+app.use("/cities", require("./routers/cityRouter"));
+app.use("/orders", require("./routers/orderRouter"));
 
 connectDB();
 
 
-app.get('/', (req, res) => {
+app.get('/', async (req, res) => {
     res.send('Hello World!')
 });
 

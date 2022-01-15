@@ -1,13 +1,9 @@
 const router = require("express").Router();
-const User = require("../models/userModel");
 const userController = require('../controller/userController');
 const auth = require('../middleware/auth');
 
-// register
-router.post("/register", userController.register);
-// log in
-router.post("/login", userController.login);
-
-router.get("/logout", auth, userController.logOut);
+router.get("/:type", auth, userController.getUsersByTypes)
+router.put('/update', auth, userController.updateUserInfo)
+router.put('/rating/:id', auth, userController.updateRating)
 
 module.exports = router;
