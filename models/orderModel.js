@@ -11,7 +11,8 @@ const orderSchema = new mongoose.Schema({
     passengers: { type: Number },
     createdAt: { type: Date, default: Date.now() },
     notes: { type: String },
-    status: { type: String, default: 'NEW' }
+    status: { type: String, default: 'NEW' },
+    rating: { type: Number }
 });
 
 const Order = mongoose.model("order", orderSchema);

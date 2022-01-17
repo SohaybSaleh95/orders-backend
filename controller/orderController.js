@@ -110,10 +110,21 @@ const deleteOrder = async (req, res) => {
     }
 }
 
+const updateRating = async (req, res) => {
+    const order = await Order.findOne({ _id: req.params.id })
+    if (!order) {
+        res.status(404).send("Order wan't found")
+        return
+    }
+    order.rating = req.body.rating
+    res.json(await order.save())
+}
+
 module.exports = {
     getOrders,
     createOrder,
     updateOrder,
     updateStatus,
-    deleteOrder
+    deleteOrder,
+    updateRating
 }

@@ -11,13 +11,7 @@ const userSchema = new mongoose.Schema({
   type: { type: String, required: true, default: 'Customer' },
   carNumber: { type: String },
   carType: { type: String },
-  numberOfPassengers: { type: Number },
-  ratings: [
-    {
-      by: { type: mongoose.Types.ObjectId, ref: 'user' },
-      rating: { type: Number }
-    }
-  ]
+  numberOfPassengers: { type: Number }
 });
 
 const User = mongoose.model("user", userSchema);

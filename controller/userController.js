@@ -113,33 +113,6 @@ const getUsersByTypes = async (req, res) => {
   res.json(users);
 }
 
-const updateRating = async (req, res) => {
-  const user = await User.findOne({ _id: req.params.id })
-  if (!user) {
-    res.status(404).send("User wan't found")
-    return
-  }
-  const loggedInUser = await getLoggedInUser(req);
-  if (user.ratings?.length) {
-    const rating = user.ratings.find((rating) => rating.by.toString() == loggedInUser._id.toString());
-    if (rating) {
-      rating.rating = req.body.rating
-    } else {
-      user.ratings.push({
-        rating: req.body.rating,
-        by: loggedInUser._id
-      })
-    }
-  } else {
-    user.ratings.push({
-      rating: req.body.rating,
-      by: loggedInUser._id
-    })
-  }
-
-  res.json(await user.save())
-}
-
 const getLoggedInUser = async (req) => {
   return await User.findOne({ _id: jwt.verify(req.headers.token, process.env.JWT_SECRET).user });
 }
@@ -168,6 +141,5 @@ module.exports = {
   login,
   logOut,
   getUsersByTypes,
-  updateRating,
   updateUserInfo
 }
