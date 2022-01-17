@@ -9,7 +9,7 @@ const app = express();
 app.use(cors());
 app.use(express.json())
 app.use(bodyParser.json())
-const port = 8000;
+const port = process.env.PORT || 8000;
 app.use("/auth", require("./routers/authRouter"));
 app.use("/users", require('./routers/userRouter'));
 app.use("/cities", require("./routers/cityRouter"));
